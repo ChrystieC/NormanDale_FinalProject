@@ -21,13 +21,39 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="LoadPhotoPackage\read_data.py" />
+    <Compile Include="LoadPhotoPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocationDecryptionPackage\location_decryption.py" />
+    <Compile Include="LocationDecryptionPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="mainPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="mainPackage\main.py" />
+    <Compile Include="MovieDecryptionPackage\movie_decryption.py" />
+    <Compile Include="MovieDecryptionPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReadDataPackage\read_data.py" />
+    <Compile Include="ReadDataPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="LoadPhotoPackage\" />
+    <Folder Include="LocationDecryptionPackage\" />
     <Folder Include="mainPackage\" />
+    <Folder Include="Data\" />
+    <Folder Include="MovieDecryptionPackage\" />
+    <Folder Include="ReadDataPackage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\EncryptedGroupHints Spring 2025.json" />
+    <Content Include="Data\TeamsAndEncryptedMessagesForDistribution.json" />
+    <Content Include="Data\UCEnglish.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
