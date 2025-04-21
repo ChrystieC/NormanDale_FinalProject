@@ -10,36 +10,30 @@
 # Brief Description of the assignment:  {required}
 
 # Brief Description of what this module does. {Do not copy/paste from a previous assignment. Put some thought into this. required}
-# Citations: google search ai, 
+# Citations: google search ai, chatgpt
 
 # Anything else that's relevant:
 
+import json
 from cryptography.fernet import Fernet
 
-def decrypt_json_movie(filepath, key):
-    """
-    Decrypts a JSON file using a provided key.
+def decrypt_json_section(encrypted_data, key_string, target_key):
+    """Decrypts a JSON file encrypted with Fernet and returns a specific section."""
+    
 
-    Returns the raw decrypted string instead of a dictionary.
-    """
-    try:
-        f = Fernet(key)
-        with open(filepath, 'rb') as file:
-            encrypted_data = file.read()
-        decrypted_data = f.decrypt(encrypted_data)
-        return decrypted_data.decode()  
-    except Exception as e:
-        print(f"Decryption error: {e}")
-        return None
+     f = Fernet(key_string)
+     movie_encryption = str (encrypted_data[ target_key])
+     decrypted_data = f.decrypt(movie_encryption)
+     return decrypted_data
 
-# Example Usage
-key = b'tpeVVwifsg2Ga_CzYCndI9BC_HHzkj_pT_WyY2t_SeI='  
-filepath = 'encrypted_data.json' #I haven't adjusted yet since I need to double check which file has the movie stuff
+        # Return only the specified section
+     
 
-decrypted_data = decrypt_json_movie(filepath, key)
+   
+# Usage
 
-if decrypted_data:
-    print("Decrypted data:")
-    print(decrypted_data)  
-else:
-    print("Decryption failed.")
+fernet_key = 'tpeVVwifsg2Ga_CzYCndI9BC_HHzkj_pT_WyY2t_SeI='
+target_section = 'Norman Dale'
+
+decrypted_section = decrypt_json_section(encrypted_file, fernet_key, target_section)
+
