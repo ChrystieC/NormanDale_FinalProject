@@ -12,7 +12,7 @@
 # Anything else that's relevant:
 
 import json
-from cryptography.fernet import Fernet
+from cryptography.fernet import Fernet # type: ignore
 class MovieDecryption:
 
     def __init__(self, encrypted_data, target_key):
