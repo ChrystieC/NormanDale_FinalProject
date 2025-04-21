@@ -1,15 +1,4 @@
 # location_decryption.py
-import json
-
-group_name = 'Norman Dale'
-with open('Data/EncryptedGroupHints Spring 2025.json', 'r') as f:
-    encrypted_data = json.load(f)
-
-
-
-with open('Data/UCEnglish.txt', 'r') as f:
-    uc_eng = f.readlines()
-
 
 class LocationDecryption:
     """
@@ -40,5 +29,6 @@ class LocationDecryption:
 
         return self.full_sentence
 
-locationDecryption = LocationDecryption(location_name="Wilbur (Shooter) Flatch", encrypted_data=encrypted_data, uceng=uc_eng)
-locationDecryption.decryption_location()
+if __name__ == "__main__":
+    locationDecryption = LocationDecryption(location_name="Wilbur (Shooter) Flatch", encrypted_data=encrypted_data, uceng=uc_eng)
+    locationDecryption.decryption_location()
