@@ -13,9 +13,9 @@
 
 
 
+class ReadDataTXT:
+    def read_txt(self, txt_path, file_name):
+        with open(txt_path, "r") as f:
+            file_name = f.readlines()
 
-def read_txt(self, txt_path, file_name):
-    with open(txt_path, "r") as f:
-        file_name = f.readlines()
-
-    return file_name
+        return file_name

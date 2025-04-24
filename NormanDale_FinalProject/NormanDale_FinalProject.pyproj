@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e622931c-9cdd-43a6-993d-a27d51e9c88d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>mainPackage\main.py</StartupFile>
+    <StartupFile>LoadPhotoPackage\show_photo.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="LoadPhotoPackage\show_photo.py" />
     <Compile Include="LoadPhotoPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
@@ -36,7 +37,7 @@
     <Compile Include="MovieDecryptionPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ReadDataPackage\read_data.py" />
+    <Compile Include="ReadDataPackage\read_json.py" />
     <Compile Include="ReadDataPackage\read_txt.py" />
     <Compile Include="ReadDataPackage\__init__.py">
       <SubType>Code</SubType>
@@ -54,6 +55,7 @@
     <Content Include="Data\EncryptedGroupHints Spring 2025.json" />
     <Content Include="Data\TeamsAndEncryptedMessagesForDistribution.json" />
     <Content Include="Data\UCEnglish.txt" />
+    <Content Include="LoadPhotoPackage\group_photo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
