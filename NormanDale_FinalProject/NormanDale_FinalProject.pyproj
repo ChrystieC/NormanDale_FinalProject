@@ -21,7 +21,6 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="LoadPhotoPackage\read_data.py" />
     <Compile Include="LoadPhotoPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
@@ -38,6 +37,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ReadDataPackage\read_data.py" />
+    <Compile Include="ReadDataPackage\read_txt.py" />
     <Compile Include="ReadDataPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
