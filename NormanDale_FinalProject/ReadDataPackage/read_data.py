@@ -1,10 +1,12 @@
-# read_data.py
 
-import json
+    def read_json(json_path, file_name):
+        with open(json_path, "r") as f:
+            file_name = json.load(f)
 
-class ReadData:
-    def read_json(file_path):
-        with open(file_path, "r") as f:
-            return json.load(f)
+        return file_name
 
+    def read_txt(txt_path, file_name):
+        with open(txt_path, "r") as f:
+            file_name = f.readlines()
 
+        return file_name
