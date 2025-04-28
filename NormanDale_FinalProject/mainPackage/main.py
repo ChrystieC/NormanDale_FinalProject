@@ -16,7 +16,6 @@ from MovieDecryptionPackage.movie_decryption import *
 from LocationDecryptionPackage.location_decryption import *
 from LoadPhotoPackage.show_photo import *
 from PIL import Image
-import os
 
 if __name__ == "__main__":
 
