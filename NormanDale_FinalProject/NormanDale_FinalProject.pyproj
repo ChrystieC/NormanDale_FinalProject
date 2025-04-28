@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>e622931c-9cdd-43a6-993d-a27d51e9c88d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>LoadPhotoPackage\show_photo.py</StartupFile>
+    <StartupFile>mainPackage\main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -53,9 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\EncryptedGroupHints Spring 2025.json" />
+    <Content Include="Data\group_photo.jpeg" />
     <Content Include="Data\TeamsAndEncryptedMessagesForDistribution.json" />
     <Content Include="Data\UCEnglish.txt" />
-    <Content Include="LoadPhotoPackage\group_photo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
